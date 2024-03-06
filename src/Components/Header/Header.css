@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+
+
+* {box-sizing: border-box;}
+
+.header {
+    overflow: hidden;
+    background-color: #f0f0f0;
+    /* padding: 1.25rem 0.625rem; */
+    height: 5rem;
+    /* z-index: 100; */
+
+  }
+
+  .header-components{
+    min-height: fit-content;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  
+  .header-right a {
+    float: left;
+    color: black;
+    text-decoration: none;
+  }
+  
+  .header a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  .header-right {
+    float: right;
+    overflow: hidden;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    min-width: fit-content;
+    justify-content: space-between;
+    font-family: "Inter", sans-serif;
+    gap: 1rem;
+  }
+
+  .nav__toggle,
+  .nav__close {
+   font-size: 1.5rem;
+   color:black;
+   cursor: pointer;
+  }
+
+  .logo{
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  .getStarted-Button {
+    background-color: #2870EA    ;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    padding: 1.25rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    /* margin: 4px 2px; */
+    cursor: pointer;
+  }
+  .header-right li{
+    list-style-type: none;
+  }
+  
+  
+  .nav__close {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+   }
+   
+   .show-menu {
+    right: 0;
+   }
+
+   @media screen and (min-width: 700px) {
+    .nav__toggle,
+    .nav__close {
+      display: none;
+    }
+   
+    .header-right {
+      flex-direction: row;
+    }
+   }
+    
+  @media screen and (max-width: 700px) {
+    /* .header a {
+      float: none;
+      display: block;
+      text-align: left;
+    } */
+    
+    .nav__menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        background-color: #fff;
+        width: 50%;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+            padding: 6rem 3rem 0;
+    }
+    /* .header-right.active{
+        left:0;
+    }
+     .hamburger {
+        display: block;
+        cursor: pointer;
+    } */
+
+  }
