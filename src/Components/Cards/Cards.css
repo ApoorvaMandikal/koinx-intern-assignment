@@ -1,0 +1,101 @@
+
+
+.card-body{
+    width: 50vw;
+    padding: 4%;
+    margin-bottom: 2%;
+    border-radius: 8px;
+}
+
+.card1{
+    height: 61vh;
+} 
+.card2{
+    height: 59vh
+}
+.card3{
+    height: 40vh
+}
+.card4{
+    height: 76vh;
+}
+.card5{
+height: 35vh
+}
+.card6{
+    height: 80vh;
+}
+
+.chart-div{
+    height: 40vh;
+    padding-top: 3%;
+}
+
+.card1-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1rem;
+}
+
+.card-header{
+    font-size: 1rem;
+    margin-bottom: 2%;
+
+}
+.sub-headings{
+    font-size: 0.8rem;
+    /* height: 45%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-weight: bold;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+.bitcoin{
+    display: flex;
+    flex-direction: row;
+}
+
+.rank-button {
+    background-color: #808A9D    ;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    padding: 0.5rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    margin-left: 1rem;
+    cursor: pointer;
+  }
+
+  .textarea{
+    max-height: 100%;
+    font-size: 0.7rem;
+    font-weight: normal;
+  }
+
+  .team-card{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: 85%;
+  }
+  @media screen and (max-width: 700px) {
+    .card-container{
+        max-width: 100% !important;
+    }
+    .card-body{
+        width: 100%;
+        margin-bottom: 2%;
+        border-radius: 8px;
+    }
+  }
